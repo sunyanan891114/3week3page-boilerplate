@@ -20,3 +20,8 @@ gulp.task('serve', function() {
     server.notify.apply(server, [file]);
   });
 });
+
+gulp.task('images', function () {
+  return gulp.src('./src/images/**')
+      .pipe(gulp.dest('./dist/images'));
+});
