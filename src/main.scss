@@ -1,9 +1,18 @@
 $btn-border-color: #eae9e6;
 $students-bg-color: #91d0b1;
-$prospective-tutors-bg-color:#ffcd62;
+$prospective-tutors-bg-color: #ffcd62;
 $partners-bg-color: #80a8cc;
 
-$main-font-family: 'Just Another Hand', cursive;;
+$main-font-family: 'Just Another Hand', cursive;
+
+@mixin opacity-filter {
+  -khtml-opacity: .70;
+  -moz-opacity: .70;
+  -ms-filter: "alpha(opacity=70)";
+  filter: alpha(opacity=70);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.7);
+  opacity: .70;
+}
 
 body {
   font-family: Avenir, sans-serif;
@@ -40,7 +49,7 @@ h2 {
   .students-picture {
     display: inline-block;
     background-size: cover;
-    height:271px;
+    height: 271px;
     width: 35%;
     vertical-align: middle;
     background: url("http://placehold.it/800x600");
@@ -52,10 +61,10 @@ h2 {
     text-align: left;
     line-height: 1.5em;
     font-size: 1.25em;
-    margin:0 80px;
+    margin: 0 80px;
     vertical-align: middle;
     .section-btn {
-      background: rgba(0,0,0,0.2);
+      background: rgba(0, 0, 0, 0.2);
       color: #FFF;
       font-size: 1em;
     }
@@ -90,7 +99,7 @@ header {
       display: inline-block;
       text-decoration: none;
       margin-left: 20px;
-      color:#777883;
+      color: #777883;
     }
     :last-child {
       margin-right: 20px;
@@ -110,13 +119,8 @@ header {
   background-size: cover;
   color: #FFFFFF;
   position: relative;
+  @include opacity-filter;
 
-  -khtml-opacity:.70;
-  -moz-opacity:.70;
-  -ms-filter:"alpha(opacity=70)";
-  filter:alpha(opacity=70);
-  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.7);
-  opacity:.70;
   h2 {
     font-size: 60px;
     margin-bottom: 40px;
@@ -181,7 +185,7 @@ header {
       width: 15px;
       height: 15px;
       border-radius: 50%;
-      background: rgba(0,0,0,0.2);
+      background: rgba(0, 0, 0, 0.2);
       margin-bottom: 5px;
     }
     .active {
