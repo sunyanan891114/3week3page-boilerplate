@@ -1,0 +1,214 @@
+html {
+  background: #FFFFFF; }
+
+body {
+  margin: 0 auto;
+  max-width: 1080px;
+  min-width: 980px;
+  font-size: 16px;
+  font-family: "Lora", serif;
+  font-weight: 200; }
+
+ul {
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.main-content {
+  float: right;
+  width: 78%; }
+
+.aside {
+  width: 20%;
+  float: left;
+  margin-right: 2%; }
+  .aside .logo {
+    width: 70%;
+    padding-bottom: 70%;
+    background: url("./images/food-sense-logo.png") 0px 99%;
+    background-size: cover; }
+  .aside .nav {
+    font-size: 1.25em;
+    line-height: 2.5em;
+    margin-bottom: 60px; }
+    .aside .nav__item {
+      text-align: left; }
+      .aside .nav__item a {
+        color: #3baf9b;
+        text-decoration: none; }
+      .aside .nav__item i {
+        width: 1em;
+        text-align: center; }
+  .aside .social-content {
+    margin: 40px 0; }
+    .aside .social-content__title {
+      padding: .2em 0;
+      border-bottom: 2px dashed #eee;
+      margin: 10px 0; }
+    .aside .social-content__link {
+      font-size: 1em;
+      font-family: "Josefin Slab", serif;
+      background: transparent;
+      border: 1px solid #eee;
+      text-align: center;
+      width: 100%;
+      border-radius: 5px;
+      color: #3baf9b;
+      line-height: 2em; }
+      .aside .social-content__link i {
+        vertical-align: middle;
+        font-size: 20px; }
+    .aside .social-content__description {
+      font-size: .875em;
+      font-family: "Josefin Slab", serif;
+      margin-bottom: 10px; }
+
+.header-content__picture {
+  height: 400px;
+  width: 100%;
+  background: url("./images/cake-main.jpg");
+  background-size: cover;
+  min-height: 270px;
+  position: relative; }
+  .header-content__picture .title {
+    position: relative;
+    top: 60%;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.3em 15px;
+    float: right;
+    font-style: italic; }
+  .header-content__picture h1 {
+    background: #FFFFFF;
+    font-size: 2em; }
+  .header-content__picture h2 {
+    background: #000;
+    color: #FFFFFF;
+    font-size: 1.5em; }
+  .header-content__picture .picture-footer {
+    background: rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    border-radius: 5px;
+    position: absolute;
+    top: 90%;
+    right: 10px;
+    color: #e5e5e5;
+    font-size: .6em; }
+
+.header-content .nav {
+  margin: 0; }
+  .header-content .nav__item {
+    color: #3baf9b;
+    width: 25%;
+    float: left;
+    background: #eff8f7;
+    padding: 4% 2%;
+    border-right: 1px solid #d9efec;
+    box-sizing: border-box; }
+    .header-content .nav__item .title {
+      font-size: 1.5em;
+      line-height: 1.5em; }
+    .header-content .nav__item .description {
+      font-size: .81em;
+      font-family: "Josefin Slab", serif; }
+  .header-content .nav :last-child {
+    border-right: none; }
+  .header-content .nav .active {
+    background: #d9efec; }
+
+.header-content .nav::after {
+  content: "";
+  clear: both;
+  display: block; }
+
+.email {
+  text-align: center;
+  font-size: 1em;
+  border-top: 2px dashed #eee;
+  border-bottom: 2px dashed #eee;
+  margin: 2% 0;
+  padding: 2% 0; }
+  .email__icon {
+    font-size: 2em;
+    display: inline-block;
+    vertical-align: middle; }
+  .email__description {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.5em;
+    width: 400px;
+    margin: 0 2%;
+    text-align: left;
+    vertical-align: middle;
+    font-family: "Josefin Slab", serif; }
+  .email__form {
+    display: inline-block; }
+    .email__form .email-input {
+      line-height: 1.5em;
+      margin-right: 10px;
+      width: 18em; }
+    .email__form .email-submit {
+      background: linear-gradient(#FFFFFF, #e5e5e5);
+      font-size: .8em;
+      padding: .2em 1.4em;
+      border-radius: 5px;
+      border: 1px solid #e5e5e5; }
+
+.blog {
+  font-size: 0; }
+
+.article {
+  width: 24%;
+  padding-right: 1%;
+  margin-bottom: 2%;
+  display: inline-block;
+  font-size: 13px;
+  vertical-align: top; }
+  .article__picture {
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+    box-shadow: 3px 3px 3px #e5e5e5; }
+    .article__picture img {
+      width: 100%; }
+  .article__title {
+    color: #3baf9b;
+    margin: 10px 0;
+    font-size: 1.25em; }
+  .article__content {
+    margin: 10px 0; }
+  .article__time {
+    color: #ABACAC; }
+  .article__more {
+    text-decoration: none;
+    color: #3baf9b;
+    border-bottom: 1px dashed #e5e5e5; }
+  .article:last-child {
+    width: 24%;
+    padding-right: 0; }
+
+.footer {
+  margin-top: 20px;
+  padding: 10px 0;
+  float: left;
+  width: 100%;
+  border-top: 2px solid #ABACAC; }
+  .footer .footer-content {
+    float: left;
+    font-size: .85em;
+    padding: 7px 0; }
+    .footer .footer-content a {
+      color: #3baf9b;
+      border-right: 2px solid #e5e5e5;
+      padding-right: 5px; }
+    .footer .footer-content p {
+      color: #ABACAC;
+      margin-bottom: 0; }
+  .footer .social-links {
+    float: right;
+    padding: 13px 0;
+    letter-spacing: .2em; }
+    .footer .social-links i {
+      font-size: 2.25em;
+      color: #ABACAC; }
