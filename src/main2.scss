@@ -1,0 +1,267 @@
+$main-font-color: #3baf9b;
+$light-grey: #e5e5e5;
+$dark-grey: #ABACAC;
+
+$main-font-family: 'Lora', serif;
+$secondary-font-family:'Josefin Slab', serif;
+
+html {
+  background: #FFFFFF;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1080px;
+  min-width: 980px;
+  font-size: 16px;
+  font-family: $main-font-family;
+  font-weight: 200;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.main-content {
+  float:right;
+  width: 78%;
+}
+
+.aside {
+  width: 20%;
+  float: left;
+  margin-right: 2%;
+  .logo {
+    width: 70%;
+    padding-bottom: 70%;
+    background: url("./images/food-sense-logo.png") 0px 99%;
+    background-size: cover;
+  }
+  .nav {
+    font-size: 1.25em;
+    line-height: 2.5em;
+    margin-bottom: 60px;
+    &__item {
+      text-align: left;
+      a {
+        color: $main-font-color;
+        text-decoration: none;
+      }
+      i {
+        width: 1em;
+        text-align: center;
+      }
+    }
+  }
+  .social-content {
+    margin: 40px 0;
+    &__title {
+      padding: .2em 0;
+      border-bottom: 2px dashed #eee;
+      margin: 10px 0;
+    }
+    &__link {
+      font-size: 1em;
+      font-family: $secondary-font-family;
+      background: transparent;
+      border: 1px solid #eee;
+      text-align: center;
+      width: 100%;
+      border-radius: 5px;
+      color: $main-font-color;
+      line-height: 2em;
+      i {
+        vertical-align: middle;
+        font-size: 20px;
+      }
+    }
+    &__description {
+      font-size: .875em;
+      font-family: $secondary-font-family;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.header-content {
+  &__picture {
+    height: 400px;
+    width: 100%;
+    background: url("./images/cake-main.jpg");
+    background-size: cover;
+    min-height: 270px;
+    position: relative;
+    .title {
+      position: relative;
+      top: 60%;
+      width: fit-content;
+      margin: 0 auto;
+      padding: 0.3em 15px;
+      float: right;
+      font-style: italic;
+    }
+    h1 {
+      background: #FFFFFF;
+      font-size: 2em;
+    }
+    h2 {
+      background: #000;
+      color: #FFFFFF;
+      font-size: 1.5em;
+    }
+    .picture-footer {
+      background: rgba(0, 0, 0, .1);
+      font-size: 1em;
+      border-radius: 5px;
+      position: absolute;
+      top: 90%;
+      right: 10px;
+      color: $light-grey;
+      font-size: .6em;
+    }
+  }
+  .nav {
+    margin: 0;
+    &__item {
+      color: $main-font-color;
+      width: 25%;
+      float: left;
+      background: #eff8f7;
+      padding: 4% 2%;
+      border-right: 1px solid #d9efec;
+      box-sizing: border-box;
+      .title {
+        font-size: 1.5em;
+        line-height: 1.5em;
+      }
+      .description {
+        font-size: .81em;
+        font-family: $secondary-font-family;
+      }
+    }
+    :last-child {
+      border-right: none;
+    }
+    .active {
+      background: #d9efec;
+    }
+  }
+  .nav::after{
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
+
+.email {
+  text-align: center;
+  font-size: 1em;
+  border-top: 2px dashed #eee;
+  border-bottom: 2px dashed #eee;
+  margin: 2% 0;
+  padding: 2% 0;
+  &__icon{
+    font-size: 2em;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &__description {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.5em;
+    width: 400px;
+    margin: 0 2%;
+    text-align: left;
+    vertical-align: middle;
+    font-family: $secondary-font-family;
+  }
+  &__form {
+    display: inline-block;
+    .email-input {
+      line-height: 1.5em;
+      margin-right: 10px;
+      width: 18em;
+    }
+    .email-submit {
+      background: linear-gradient(#FFFFFF, $light-grey);
+      font-size: .8em;
+      padding: .2em 1.4em;
+      border-radius: 5px;
+      border: 1px solid $light-grey;
+    }
+  }
+}
+.blog {
+  font-size: 0;
+}
+.article {
+  width: 24%;
+  padding-right: 1%;
+  margin-bottom: 2%;
+  display: inline-block;
+  font-size: 13px;
+  vertical-align: top;
+  &__picture {
+    border: 1px solid $light-grey;
+    padding: 10px;
+    box-shadow:3px 3px 3px $light-grey;
+    img {
+      width: 100%;
+    }
+  }
+  &__title {
+    color: $main-font-color;
+    margin: 10px 0;
+    font-size: 1.25em;
+  }
+  &__content {
+    margin: 10px 0;
+  }
+  &__time {
+    color: $dark-grey;
+  }
+  &__more {
+    text-decoration: none;
+    color: $main-font-color;
+    border-bottom: 1px dashed $light-grey;
+  }
+  &:last-child {
+    width: 24%;
+    padding-right: 0;
+  }
+}
+
+.footer {
+  margin-top: 20px;
+  padding: 10px 0;
+  float: left;
+  width: 100%;
+  border-top: 2px solid $dark-grey;
+  .footer-content {
+    float: left;
+    font-size: .85em;
+    padding: 7px 0;
+    a {
+      color: $main-font-color;
+      border-right: 2px solid $light-grey;
+      padding-right: 5px;
+    }
+    p {
+      color: $dark-grey;
+      margin-bottom: 0;
+    }
+  }
+  .social-links {
+    float: right;
+    padding: 13px 0;
+    letter-spacing: .2em;
+    i {
+      font-size: 2.25em;
+      color: $dark-grey;
+    }
+  }
+}

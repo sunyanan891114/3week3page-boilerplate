@@ -18,6 +18,7 @@
   "author": "Xiaojing Si",
   "license": "ThoughtWorks",
   "devDependencies": {
+    "browser-sync": "^2.13.0",
     "gulp": "^3.9.1",
     "gulp-live-server": "0.0.30",
     "gulp-sass": "^2.3.2"
