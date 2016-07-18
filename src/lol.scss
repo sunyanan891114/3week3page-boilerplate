@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  background: url('./images/intro_frame.png') no-repeat bottom center;
+  background-size: cover;
+  z-index: 10001;
+  position: relative;
+  min-height: 100%;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #93743d;
+  overflow: hidden;
+  overflow-y: auto;
+  text-shadow: 0 0 11px #000, 0 0 11px #000, 0 0 20px #000;
+}
+
+#scene{
+  background: #000;
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  z-index: 10000;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  .layer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .back-layer {
+    background: url("./images/intro_bg.jpg");
+    background-size: cover;
+    height: 120%;
+    width: 120%;
+    margin: -10%;
+  }
+  .front-layer {
+    background: url("./images/intro_frame.png");
+    background-size: 100% 100%;
+  }
+}
+
+.intro {
+  max-width: 660px;
+  margin: 0 auto;
+  z-index: 10002;
+  position: relative;
+  padding: 75px 15px 150px;
+  .intro-title {
+    width: 508px;
+    height: 147px;
+    background: url("./images/title_welcome_en_US.png");
+    background-size: cover;
+    z-index: 10000;
+  }
+}
