@@ -11,8 +11,7 @@ html {
 
 body {
   margin: 0 auto;
-  max-width: 1080px;
-  min-width: 980px;
+  width: 1080px;
   font-size: 16px;
   font-family: $main-font-family;
   font-weight: 200;
@@ -115,10 +114,8 @@ a {
     }
     .picture-footer {
       background: rgba(0, 0, 0, .1);
-      font-size: 1em;
       border-radius: 5px;
-      position: absolute;
-      top: 90%;
+      top: 65%;
       right: 10px;
       color: $light-grey;
       font-size: .6em;
