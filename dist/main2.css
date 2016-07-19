@@ -27,7 +27,8 @@ a {
     width: 70%;
     padding-bottom: 70%;
     background: url("./images/food-sense-logo.png") 0px 99%;
-    background-size: cover; }
+    background-size: cover;
+    display: block; }
   .aside .nav {
     font-size: 1.25em;
     line-height: 2.5em;
@@ -74,7 +75,6 @@ a {
   .header-content__picture .title {
     position: relative;
     top: 60%;
-    width: fit-content;
     margin: 0 auto;
     padding: 0.3em 15px;
     float: right;
